@@ -14,6 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // MARK: - Start App
+        let searchModule = HomeRouter.createModule()
+        let homeNavigationController = UINavigationController(rootViewController: searchModule)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = homeNavigationController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 }
