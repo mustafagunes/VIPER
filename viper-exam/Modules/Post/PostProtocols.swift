@@ -16,20 +16,26 @@ protocol PostWireframeProtocol: class {
 // MARK: - Presenter
 protocol PostPresenterProtocol: class {
     var interactor: PostInteractorInputProtocol? { get set }
+    
+    func getPosts()
 }
 
 // MARK: - Interactor
 protocol PostInteractorOutputProtocol: class {
-    /* Interactor -> Presenter */
+    func resultPosts(posts: [Post])
+    func errorService(message: String)
 }
 
 protocol PostInteractorInputProtocol: class {
     var presenter: PostInteractorOutputProtocol?  { get set }
-    /* Presenter -> Interactor */
+    
+    func getPosts()
 }
 
 // MARK: - View
 protocol PostViewProtocol: class {
     var presenter: PostPresenterProtocol?  { get set }
-    /* Presenter -> ViewController */
+    
+    func setPost(posts: [Post])
+    func errorService(message: String)
 }

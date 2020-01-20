@@ -10,5 +10,22 @@
 import UIKit
 
 class PostInteractor: PostInteractorInputProtocol {
+    
+    // MARK: - Definition
     weak var presenter: PostInteractorOutputProtocol?
+    
+    // MARK: - Method
+    func getPosts() {
+        let request = GetPostsRequest()
+        request.fetchData(success: { (posts) in
+//            self.presenter?.resultPosts(posts: posts)
+        }) { (error) in
+            switch error {
+            case .serviceError( _, let message):
+                self.presenter?.errorService(message: message)
+            default:
+                break
+            }
+        }
+    }
 }

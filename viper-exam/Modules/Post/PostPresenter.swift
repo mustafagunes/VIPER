@@ -9,7 +9,7 @@
 
 import UIKit
 
-class PostPresenter: PostPresenterProtocol, PostInteractorOutputProtocol {
+class PostPresenter: PostPresenterProtocol {
 
     // MARK: - Definitions
     weak private var view: PostViewProtocol?
@@ -21,5 +21,23 @@ class PostPresenter: PostPresenterProtocol, PostInteractorOutputProtocol {
         self.view = interface
         self.interactor = interactor
         self.router = router
+    }
+}
+
+// MARK: - PostInteractorOutputProtocol
+extension PostPresenter: PostInteractorOutputProtocol {
+    
+    func getPosts() {
+        interactor?.getPosts()
+    }
+    
+    func resultPosts(posts: [Post]) {
+        // TODO: - view laod olacak
+        view?.setPost(posts: posts)
+    }
+    
+    func errorService(message: String) {
+        // TODO: - view error gidecek
+        view?.errorService(message: message)
     }
 }
