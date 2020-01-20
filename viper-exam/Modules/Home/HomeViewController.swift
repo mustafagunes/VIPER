@@ -34,19 +34,50 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         self.view.backgroundColor = .white
         self.createComponents()
     }
+    
+    @objc func buttonTapped(sender: UIButton) {
+        switch sender {
+        case postButton:
+            presenter?.showPosts()
+        case commentButton:
+            break
+        case albumButton:
+            break
+        case photoButton:
+            break
+        case todoButton:
+            break
+        case userButton:
+            break
+        default:
+            break
+        }
+    }
 }
 
 // MARK: - Create Components
 extension HomeViewController {
     
     fileprivate func createComponents() {
+        
         // MARK: - Button
         postButton.setTitle("Posts", for: .normal)
+        postButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
         commentButton.setTitle("Comments", for: .normal)
+        commentButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
         albumButton.setTitle("Albums", for: .normal)
+        albumButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
         photoButton.setTitle("Photos", for: .normal)
+        photoButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
         todoButton.setTitle("Todos", for: .normal)
+        todoButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
         userButton.setTitle("Users", for: .normal)
+        userButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         
         // MARK: - StackView
         let stackView = UIStackView(arrangedSubviews: [postButton, commentButton, albumButton, photoButton, todoButton, userButton])

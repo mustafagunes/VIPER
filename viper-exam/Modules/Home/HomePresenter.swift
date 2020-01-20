@@ -9,7 +9,7 @@
 
 import UIKit
 
-class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol {
+class HomePresenter: HomeInteractorOutputProtocol {
 
     // MARK: - Definitions
     weak private var view: HomeViewProtocol?
@@ -21,5 +21,12 @@ class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol {
         self.view = interface
         self.interactor = interactor
         self.router = router
+    }
+}
+
+extension HomePresenter: HomePresenterProtocol {
+    
+    func showPosts() {
+        router.showPosts()
     }
 }

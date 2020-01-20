@@ -17,6 +17,11 @@
 		D9546AE723D449CE00947AB8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9546AE623D449CE00947AB8 /* Logger.swift */; };
 		D9546AEA23D45B5900947AB8 /* Encode+DecodeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9546AE923D45B5900947AB8 /* Encode+DecodeExtensions.swift */; };
 		D9546AEC23D4862D00947AB8 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9546AEB23D4862D00947AB8 /* NetworkErrors.swift */; };
+		D98A9A5C23D5D470008378CC /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5623D5D470008378CC /* PostPresenter.swift */; };
+		D98A9A5D23D5D470008378CC /* PostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5723D5D470008378CC /* PostRouter.swift */; };
+		D98A9A5E23D5D470008378CC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5823D5D470008378CC /* PostViewController.swift */; };
+		D98A9A5F23D5D470008378CC /* PostProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5923D5D470008378CC /* PostProtocols.swift */; };
+		D98A9A6023D5D470008378CC /* PostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5A23D5D470008378CC /* PostInteractor.swift */; };
 		D9BB5B9223D4934C0078A7A1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB5B8C23D4934C0078A7A1 /* HomePresenter.swift */; };
 		D9BB5B9323D4934C0078A7A1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB5B8D23D4934C0078A7A1 /* HomeRouter.swift */; };
 		D9BB5B9423D4934C0078A7A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB5B8E23D4934C0078A7A1 /* HomeViewController.swift */; };
@@ -40,6 +45,11 @@
 		D9546AE623D449CE00947AB8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		D9546AE923D45B5900947AB8 /* Encode+DecodeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encode+DecodeExtensions.swift"; sourceTree = "<group>"; };
 		D9546AEB23D4862D00947AB8 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		D98A9A5623D5D470008378CC /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		D98A9A5723D5D470008378CC /* PostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRouter.swift; sourceTree = "<group>"; };
+		D98A9A5823D5D470008378CC /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		D98A9A5923D5D470008378CC /* PostProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProtocols.swift; sourceTree = "<group>"; };
+		D98A9A5A23D5D470008378CC /* PostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostInteractor.swift; sourceTree = "<group>"; };
 		D9BB5B8C23D4934C0078A7A1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		D9BB5B8D23D4934C0078A7A1 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		D9BB5B8E23D4934C0078A7A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				D9BB5B6723D48DB20078A7A1 /* Home */,
+				D98A9A5523D5D456008378CC /* Post */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -167,6 +178,18 @@
 			children = (
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		D98A9A5523D5D456008378CC /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				D98A9A5623D5D470008378CC /* PostPresenter.swift */,
+				D98A9A5723D5D470008378CC /* PostRouter.swift */,
+				D98A9A5823D5D470008378CC /* PostViewController.swift */,
+				D98A9A5923D5D470008378CC /* PostProtocols.swift */,
+				D98A9A5A23D5D470008378CC /* PostInteractor.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 		D9BB5B6723D48DB20078A7A1 /* Home */ = {
@@ -316,8 +339,13 @@
 				D939838C23D1B1F900086080 /* NetworkManager.swift in Sources */,
 				D939838E23D1BAEA00086080 /* NetworkConfigurator.swift in Sources */,
 				D9BB5B9623D4934C0078A7A1 /* HomeInteractor.swift in Sources */,
+				D98A9A5F23D5D470008378CC /* PostProtocols.swift in Sources */,
+				D98A9A5D23D5D470008378CC /* PostRouter.swift in Sources */,
+				D98A9A6023D5D470008378CC /* PostInteractor.swift in Sources */,
 				D9546AEA23D45B5900947AB8 /* Encode+DecodeExtensions.swift in Sources */,
 				D9BB5B9523D4934C0078A7A1 /* HomeProtocols.swift in Sources */,
+				D98A9A5C23D5D470008378CC /* PostPresenter.swift in Sources */,
+				D98A9A5E23D5D470008378CC /* PostViewController.swift in Sources */,
 				D939838A23D1AE1200086080 /* NetworkProtocols.swift in Sources */,
 				D9BB5B9423D4934C0078A7A1 /* HomeViewController.swift in Sources */,
 				D939837223D1A31600086080 /* AppDelegate.swift in Sources */,
@@ -464,7 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DVHX5WRRH;
 				INFOPLIST_FILE = "viper-exam/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DVHX5WRRH;
 				INFOPLIST_FILE = "viper-exam/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
