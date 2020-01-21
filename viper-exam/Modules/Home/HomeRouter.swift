@@ -38,4 +38,10 @@ extension HomeRouter: HomeWireframeProtocol {
         let postVC = PostRouter.createModule()
         viewController?.navigationController?.pushViewController(postVC, animated: true)
     }
+    
+    // MARK: - Show CommentViewController
+    func showComments() {
+        let commentVC = CommentRouter.createModule()
+        viewController?.navigationController?.pushViewController(commentVC, animated: true)
+    }
 }

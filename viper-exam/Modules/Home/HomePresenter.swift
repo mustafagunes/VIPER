@@ -29,4 +29,8 @@ extension HomePresenter: HomePresenterProtocol {
     func showPosts() {
         router.showPosts()
     }
+    
+    func showComments() {
+        router.showComments()
+    }
 }

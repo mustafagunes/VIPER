@@ -12,6 +12,7 @@ import Foundation
 // MARK: - Wireframe
 protocol HomeWireframeProtocol: class {
     func showPosts()
+    func showComments()
 }
 
 // MARK: - Presenter
@@ -19,6 +20,7 @@ protocol HomePresenterProtocol: class {
     var interactor: HomeInteractorInputProtocol? { get set }
     
     func showPosts()
+    func showComments()
 }
 
 // MARK: - Interactor
