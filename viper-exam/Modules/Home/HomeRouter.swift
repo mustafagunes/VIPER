@@ -18,12 +18,10 @@ class HomeRouter {
     static func createModule() -> UIViewController {
 
         let view = HomeViewController(nibName: nil, bundle: nil)
-        let interactor = HomeInteractor()
         let router = HomeRouter()
-        let presenter = HomePresenter(interface: view, interactor: interactor, router: router)
+        let presenter = HomePresenter(interface: view, router: router)
 
         view.presenter = presenter
-        interactor.presenter = presenter
         router.viewController = view
 
         return view

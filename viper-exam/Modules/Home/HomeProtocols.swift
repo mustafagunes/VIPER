@@ -17,18 +17,8 @@ protocol HomeWireframeProtocol: class {
 
 // MARK: - Presenter
 protocol HomePresenterProtocol: class {
-    var interactor: HomeInteractorInputProtocol? { get set }
-    
     func showPosts()
     func showComments()
-}
-
-// MARK: - Interactor
-protocol HomeInteractorOutputProtocol: class {
-}
-
-protocol HomeInteractorInputProtocol: class {
-    var presenter: HomeInteractorOutputProtocol?  { get set }
 }
 
 // MARK: - View

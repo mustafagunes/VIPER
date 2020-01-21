@@ -9,17 +9,15 @@
 
 import UIKit
 
-class HomePresenter: HomeInteractorOutputProtocol {
+class HomePresenter {
 
     // MARK: - Definitions
     weak private var view: HomeViewProtocol?
-    var interactor: HomeInteractorInputProtocol?
     private let router: HomeWireframeProtocol
 
     // MARK: - Init Method
-    init(interface: HomeViewProtocol, interactor: HomeInteractorInputProtocol?, router: HomeWireframeProtocol) {
+    init(interface: HomeViewProtocol, router: HomeWireframeProtocol) {
         self.view = interface
-        self.interactor = interactor
         self.router = router
     }
 }

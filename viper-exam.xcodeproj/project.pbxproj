@@ -47,7 +47,6 @@
 		D9BB5B9323D4934C0078A7A1 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB5B8D23D4934C0078A7A1 /* HomeRouter.swift */; };
 		D9BB5B9423D4934C0078A7A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB5B8E23D4934C0078A7A1 /* HomeViewController.swift */; };
 		D9BB5B9523D4934C0078A7A1 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB5B8F23D4934C0078A7A1 /* HomeProtocols.swift */; };
-		D9BB5B9623D4934C0078A7A1 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB5B9023D4934C0078A7A1 /* HomeInteractor.swift */; };
 		D9BB5B9A23D495DE0078A7A1 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB5B9923D495DE0078A7A1 /* AppButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +95,6 @@
 		D9BB5B8D23D4934C0078A7A1 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		D9BB5B8E23D4934C0078A7A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D9BB5B8F23D4934C0078A7A1 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
-		D9BB5B9023D4934C0078A7A1 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		D9BB5B9923D495DE0078A7A1 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -324,7 +322,6 @@
 				D9BB5B8D23D4934C0078A7A1 /* HomeRouter.swift */,
 				D9BB5B8E23D4934C0078A7A1 /* HomeViewController.swift */,
 				D9BB5B8F23D4934C0078A7A1 /* HomeProtocols.swift */,
-				D9BB5B9023D4934C0078A7A1 /* HomeInteractor.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -469,7 +466,6 @@
 				D939838E23D1BAEA00086080 /* NetworkConfigurator.swift in Sources */,
 				D98A9A6A23D5E874008378CC /* StringExtensions.swift in Sources */,
 				D94D730D23D6EE4A00E760BB /* CommentInteractor.swift in Sources */,
-				D9BB5B9623D4934C0078A7A1 /* HomeInteractor.swift in Sources */,
 				D94D731323D6F0A600E760BB /* GetCommentRequest.swift in Sources */,
 				D98A9A5F23D5D470008378CC /* PostProtocols.swift in Sources */,
 				D94D731723D6F41000E760BB /* CommentCell.swift in Sources */,
