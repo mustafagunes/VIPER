@@ -11,25 +11,25 @@ import Foundation
 
 // MARK: - Wireframe
 protocol HomeWireframeProtocol: class {
+    func showPosts()
 }
 
 // MARK: - Presenter
 protocol HomePresenterProtocol: class {
     var interactor: HomeInteractorInputProtocol? { get set }
+    
+    func showPosts()
 }
 
 // MARK: - Interactor
 protocol HomeInteractorOutputProtocol: class {
-    /* Interactor -> Presenter */
 }
 
 protocol HomeInteractorInputProtocol: class {
     var presenter: HomeInteractorOutputProtocol?  { get set }
-    /* Presenter -> Interactor */
 }
 
 // MARK: - View
 protocol HomeViewProtocol: class {
     var presenter: HomePresenterProtocol?  { get set }
-    /* Presenter -> ViewController */
 }

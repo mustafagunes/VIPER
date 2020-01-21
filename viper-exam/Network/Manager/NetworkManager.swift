@@ -13,7 +13,7 @@ final class NetworkManager {
     
     // MARK: - typealias
     typealias ObjectClosure<T: Codable> = ((T) -> Void)
-    typealias ArrayClosure<T: Codable> = (([T]) -> Void)
+    typealias ArrayClosure<T: Codable> = ((ResponseArray<T>) -> Void)
     typealias ErrorClosure = ((ResponseError) -> Void)
     
     // MARK: - Create Header
@@ -94,7 +94,6 @@ final class NetworkManager {
                     return
                 }
                 success(parsed)
-                break
             case .failure(let error):
                 if (error as NSError).code == NSURLErrorTimedOut {
                     failure(.timeout)
@@ -119,12 +118,11 @@ final class NetworkManager {
                     failure(.notDataReturned)
                     return
                 }
-                guard let parsed = T.decode(json) else {
+                guard let parsed = ResponseArray<T>.decode(json) else {
                     failure(.decodingFailure)
                     return
                 }
-                success([parsed])
-                break
+                success(parsed)
             case .failure(let error):
                 if (error as NSError).code == NSURLErrorTimedOut {
                     failure(.timeout)

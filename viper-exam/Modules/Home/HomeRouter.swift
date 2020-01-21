@@ -9,7 +9,7 @@
 
 import UIKit
 
-class HomeRouter: HomeWireframeProtocol {
+class HomeRouter {
 
     // MARK: - Definitions
     weak var viewController: UIViewController?
@@ -27,5 +27,15 @@ class HomeRouter: HomeWireframeProtocol {
         router.viewController = view
 
         return view
+    }
+}
+
+// MARK: - HomeWireframeProtocol
+extension HomeRouter: HomeWireframeProtocol {
+    
+    // MARK: - Show PostViewController
+    func showPosts() {
+        let postVC = PostRouter.createModule()
+        viewController?.navigationController?.pushViewController(postVC, animated: true)
     }
 }
