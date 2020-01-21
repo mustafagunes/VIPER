@@ -42,7 +42,7 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         case commentButton:
             presenter?.showComments()
         case albumButton:
-            break
+            presenter?.showAlbums()
         case photoButton:
             break
         case todoButton:

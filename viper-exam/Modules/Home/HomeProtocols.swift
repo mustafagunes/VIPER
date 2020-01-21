@@ -13,12 +13,14 @@ import Foundation
 protocol HomeWireframeProtocol: class {
     func showPosts()
     func showComments()
+    func showAlbums()
 }
 
 // MARK: - Presenter
 protocol HomePresenterProtocol: class {
     func showPosts()
     func showComments()
+    func showAlbums()
 }
 
 // MARK: - View

@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2497B067F7D994BB0E0AA3B1 /* Pods_viper_exam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB5E98C0099C2DF74A0A40D /* Pods_viper_exam.framework */; };
+		D916F36B23D711D7003DF4F2 /* AlbumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36523D711D7003DF4F2 /* AlbumPresenter.swift */; };
+		D916F36C23D711D7003DF4F2 /* AlbumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36623D711D7003DF4F2 /* AlbumRouter.swift */; };
+		D916F36D23D711D7003DF4F2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36723D711D7003DF4F2 /* AlbumViewController.swift */; };
+		D916F36E23D711D7003DF4F2 /* AlbumProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36823D711D7003DF4F2 /* AlbumProtocols.swift */; };
+		D916F36F23D711D7003DF4F2 /* AlbumInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36923D711D7003DF4F2 /* AlbumInteractor.swift */; };
+		D916F37223D71200003DF4F2 /* AlbumEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F37123D71200003DF4F2 /* AlbumEntity.swift */; };
+		D916F37623D71244003DF4F2 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F37423D71244003DF4F2 /* AlbumCell.swift */; };
+		D916F37723D71244003DF4F2 /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D916F37523D71244003DF4F2 /* AlbumCell.xib */; };
+		D916F37A23D716CB003DF4F2 /* GetAlbumRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F37923D716CB003DF4F2 /* GetAlbumRequest.swift */; };
 		D939837223D1A31600086080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D939837123D1A31600086080 /* AppDelegate.swift */; };
 		D939837B23D1A31700086080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D939837A23D1A31700086080 /* Assets.xcassets */; };
 		D939837E23D1A31700086080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D939837C23D1A31700086080 /* LaunchScreen.storyboard */; };
@@ -27,6 +36,7 @@
 		D9546AE723D449CE00947AB8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9546AE623D449CE00947AB8 /* Logger.swift */; };
 		D9546AEA23D45B5900947AB8 /* Encode+DecodeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9546AE923D45B5900947AB8 /* Encode+DecodeExtensions.swift */; };
 		D9546AEC23D4862D00947AB8 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9546AEB23D4862D00947AB8 /* NetworkErrors.swift */; };
+		D95E363D23D71B72008797D0 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E363C23D71B72008797D0 /* UIColorExtensions.swift */; };
 		D98A9A5C23D5D470008378CC /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5623D5D470008378CC /* PostPresenter.swift */; };
 		D98A9A5D23D5D470008378CC /* PostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5723D5D470008378CC /* PostRouter.swift */; };
 		D98A9A5E23D5D470008378CC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5823D5D470008378CC /* PostViewController.swift */; };
@@ -54,6 +64,15 @@
 		47C65C8043DC2E8B4E25D1B0 /* Pods-viper-exam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-exam.release.xcconfig"; path = "Target Support Files/Pods-viper-exam/Pods-viper-exam.release.xcconfig"; sourceTree = "<group>"; };
 		4FB5E98C0099C2DF74A0A40D /* Pods_viper_exam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_exam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		578B59C51FA678F786182E55 /* Pods-viper-exam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-exam.debug.xcconfig"; path = "Target Support Files/Pods-viper-exam/Pods-viper-exam.debug.xcconfig"; sourceTree = "<group>"; };
+		D916F36523D711D7003DF4F2 /* AlbumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPresenter.swift; sourceTree = "<group>"; };
+		D916F36623D711D7003DF4F2 /* AlbumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRouter.swift; sourceTree = "<group>"; };
+		D916F36723D711D7003DF4F2 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		D916F36823D711D7003DF4F2 /* AlbumProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumProtocols.swift; sourceTree = "<group>"; };
+		D916F36923D711D7003DF4F2 /* AlbumInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInteractor.swift; sourceTree = "<group>"; };
+		D916F37123D71200003DF4F2 /* AlbumEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumEntity.swift; sourceTree = "<group>"; };
+		D916F37423D71244003DF4F2 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		D916F37523D71244003DF4F2 /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
+		D916F37923D716CB003DF4F2 /* GetAlbumRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAlbumRequest.swift; sourceTree = "<group>"; };
 		D939836E23D1A31600086080 /* viper-exam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viper-exam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D939837123D1A31600086080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		D939837A23D1A31700086080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +94,7 @@
 		D9546AE623D449CE00947AB8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		D9546AE923D45B5900947AB8 /* Encode+DecodeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encode+DecodeExtensions.swift"; sourceTree = "<group>"; };
 		D9546AEB23D4862D00947AB8 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		D95E363C23D71B72008797D0 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		D98A9A5623D5D470008378CC /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
 		D98A9A5723D5D470008378CC /* PostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRouter.swift; sourceTree = "<group>"; };
 		D98A9A5823D5D470008378CC /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +136,37 @@
 				4FB5E98C0099C2DF74A0A40D /* Pods_viper_exam.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D916F36423D711B9003DF4F2 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				D916F37323D71232003DF4F2 /* AlbumCell */,
+				D916F36523D711D7003DF4F2 /* AlbumPresenter.swift */,
+				D916F36623D711D7003DF4F2 /* AlbumRouter.swift */,
+				D916F36723D711D7003DF4F2 /* AlbumViewController.swift */,
+				D916F36823D711D7003DF4F2 /* AlbumProtocols.swift */,
+				D916F36923D711D7003DF4F2 /* AlbumInteractor.swift */,
+				D916F37123D71200003DF4F2 /* AlbumEntity.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		D916F37323D71232003DF4F2 /* AlbumCell */ = {
+			isa = PBXGroup;
+			children = (
+				D916F37423D71244003DF4F2 /* AlbumCell.swift */,
+				D916F37523D71244003DF4F2 /* AlbumCell.xib */,
+			);
+			path = AlbumCell;
+			sourceTree = "<group>";
+		};
+		D916F37823D716B6003DF4F2 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				D916F37923D716CB003DF4F2 /* GetAlbumRequest.swift */,
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 		D939836523D1A31600086080 = {
@@ -164,6 +215,7 @@
 				D9BB5B6723D48DB20078A7A1 /* Home */,
 				D98A9A5523D5D456008378CC /* Post */,
 				D94D730223D6EE3300E760BB /* Comment */,
+				D916F36423D711B9003DF4F2 /* Album */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -244,6 +296,7 @@
 				D98A9A6923D5E874008378CC /* StringExtensions.swift */,
 				D98A9A7023D5EE65008378CC /* UIAlertControllerExtensions.swift */,
 				D98A9A7223D5EEA4008378CC /* UIViewControllerExtensions.swift */,
+				D95E363C23D71B72008797D0 /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +317,7 @@
 			children = (
 				D98A9A6D23D5ECC0008378CC /* Posts */,
 				D94D731123D6F09300E760BB /* Comment */,
+				D916F37823D716B6003DF4F2 /* Album */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -407,6 +461,7 @@
 			files = (
 				D939837E23D1A31700086080 /* LaunchScreen.storyboard in Resources */,
 				D98A9A6623D5E50A008378CC /* PostCell.xib in Resources */,
+				D916F37723D71244003DF4F2 /* AlbumCell.xib in Resources */,
 				D939837B23D1A31700086080 /* Assets.xcassets in Resources */,
 				D94D731823D6F41000E760BB /* CommentCell.xib in Resources */,
 			);
@@ -465,19 +520,25 @@
 				D939838C23D1B1F900086080 /* NetworkManager.swift in Sources */,
 				D939838E23D1BAEA00086080 /* NetworkConfigurator.swift in Sources */,
 				D98A9A6A23D5E874008378CC /* StringExtensions.swift in Sources */,
+				D916F37223D71200003DF4F2 /* AlbumEntity.swift in Sources */,
 				D94D730D23D6EE4A00E760BB /* CommentInteractor.swift in Sources */,
 				D94D731323D6F0A600E760BB /* GetCommentRequest.swift in Sources */,
 				D98A9A5F23D5D470008378CC /* PostProtocols.swift in Sources */,
 				D94D731723D6F41000E760BB /* CommentCell.swift in Sources */,
+				D916F36C23D711D7003DF4F2 /* AlbumRouter.swift in Sources */,
 				D98A9A5D23D5D470008378CC /* PostRouter.swift in Sources */,
 				D94D730A23D6EE4A00E760BB /* CommentRouter.swift in Sources */,
+				D916F36B23D711D7003DF4F2 /* AlbumPresenter.swift in Sources */,
 				D94D730B23D6EE4A00E760BB /* CommentViewController.swift in Sources */,
+				D916F37A23D716CB003DF4F2 /* GetAlbumRequest.swift in Sources */,
 				D98A9A6023D5D470008378CC /* PostInteractor.swift in Sources */,
 				D9546AEA23D45B5900947AB8 /* Encode+DecodeExtensions.swift in Sources */,
+				D916F36D23D711D7003DF4F2 /* AlbumViewController.swift in Sources */,
 				D9BB5B9523D4934C0078A7A1 /* HomeProtocols.swift in Sources */,
 				D98A9A7123D5EE65008378CC /* UIAlertControllerExtensions.swift in Sources */,
 				D98A9A7723D5EEEB008378CC /* LoadingView.swift in Sources */,
 				D98A9A6F23D5ECD7008378CC /* GetPostsRequest.swift in Sources */,
+				D916F36F23D711D7003DF4F2 /* AlbumInteractor.swift in Sources */,
 				D98A9A5C23D5D470008378CC /* PostPresenter.swift in Sources */,
 				D98A9A7B23D5EF37008378CC /* LoadingViewPresenter.swift in Sources */,
 				D94D730123D6D98900E760BB /* ResponseArray.swift in Sources */,
@@ -487,14 +548,17 @@
 				D98A9A6C23D5E9FC008378CC /* PostEntity.swift in Sources */,
 				D98A9A6823D5E531008378CC /* CellHelper.swift in Sources */,
 				D939838A23D1AE1200086080 /* NetworkProtocols.swift in Sources */,
+				D95E363D23D71B72008797D0 /* UIColorExtensions.swift in Sources */,
 				D98A9A7323D5EEA4008378CC /* UIViewControllerExtensions.swift in Sources */,
 				D98A9A6523D5E50A008378CC /* PostCell.swift in Sources */,
 				D9BB5B9423D4934C0078A7A1 /* HomeViewController.swift in Sources */,
 				D939837223D1A31600086080 /* AppDelegate.swift in Sources */,
+				D916F37623D71244003DF4F2 /* AlbumCell.swift in Sources */,
 				D9BB5B9A23D495DE0078A7A1 /* AppButton.swift in Sources */,
 				D94D731023D6EE6100E760BB /* CommentEntity.swift in Sources */,
 				D94D730C23D6EE4A00E760BB /* CommentProtocols.swift in Sources */,
 				D9546AEC23D4862D00947AB8 /* NetworkErrors.swift in Sources */,
+				D916F36E23D711D7003DF4F2 /* AlbumProtocols.swift in Sources */,
 				D9BB5B9323D4934C0078A7A1 /* HomeRouter.swift in Sources */,
 				D9BB5B9223D4934C0078A7A1 /* HomePresenter.swift in Sources */,
 			);

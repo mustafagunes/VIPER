@@ -56,5 +56,4 @@ class CommentCell: UICollectionViewCell, ReusableView, NibLoadableView {
             make.edges.equalToSuperview().inset(10)
         }
     }
-
 }
