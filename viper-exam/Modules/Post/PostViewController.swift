@@ -13,12 +13,12 @@ import SnapKit
 class PostViewController: UIViewController {
 
     // MARK: - Definitions
+    var presenter: PostPresenterProtocol?
     var posts: [Post] = [] {
         didSet {
             collectionView.reloadData()
         }
     }
-	var presenter: PostPresenterProtocol?
     
     // MARK: - Components
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout.init())
@@ -98,9 +98,9 @@ extension PostViewController: UICollectionViewDelegateFlowLayout {
         let width = UIScreen.main.bounds.width
         let cellWidth = width - 40
         let labelWidth = cellWidth - 20
-        let titleHeight = post.title.height(withConstrainedWidth: labelWidth, font: .systemFont(ofSize: 15, weight: .semibold))
-        let bodyHeight = post.body.height(withConstrainedWidth: labelWidth, font: .systemFont(ofSize: 15, weight: .regular))
-        let cellHeight = titleHeight + bodyHeight + 20
+        let titleHeight = post.title.height(withConstrainedWidth: labelWidth, font: .systemFont(ofSize: 13))
+        let bodyHeight = post.body.height(withConstrainedWidth: labelWidth, font: .systemFont(ofSize: 13))
+        let cellHeight = titleHeight + bodyHeight
         return CGSize(width: cellWidth, height: cellHeight)
     }
     

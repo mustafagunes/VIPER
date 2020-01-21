@@ -32,12 +32,10 @@ extension PostPresenter: PostInteractorOutputProtocol {
     }
     
     func resultPosts(posts: [Post]) {
-        // TODO: - view laod olacak
         view?.setPost(posts: posts)
     }
     
     func errorService(message: String) {
-        // TODO: - view error gidecek
         view?.errorService(message: message)
     }
 }

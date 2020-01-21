@@ -18,7 +18,7 @@ class PostInteractor: PostInteractorInputProtocol {
     func getPosts() {
         let request = GetPostsRequest()
         request.fetchData(success: { (posts) in
-//            self.presenter?.resultPosts(posts: posts)
+            self.presenter?.resultPosts(posts: posts.array)
         }) { (error) in
             switch error {
             case .serviceError( _, let message):

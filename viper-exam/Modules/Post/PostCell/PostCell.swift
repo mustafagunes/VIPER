@@ -21,7 +21,6 @@ class PostCell: UICollectionViewCell, ReusableView, NibLoadableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.makeLayout()
-        self.setCell(post: post)
     }
     
     func setCell(post: Post) {
@@ -36,11 +35,15 @@ class PostCell: UICollectionViewCell, ReusableView, NibLoadableView {
         self.layer.cornerRadius = 6
         self.backgroundColor = .systemGreen
 
-        titleLabel.font = .systemFont(ofSize: 15)
+        titleLabel.font = .systemFont(ofSize: 13)
         titleLabel.textColor = .black
+        titleLabel.numberOfLines = 0
+        titleLabel.lineBreakMode = .byWordWrapping
         
-        bodyLabel.font = .systemFont(ofSize: 15)
+        bodyLabel.font = .systemFont(ofSize: 13)
         bodyLabel.textColor = .black
+        bodyLabel.numberOfLines = 0
+        bodyLabel.lineBreakMode = .byWordWrapping
         
         // MARK: - StackView
         let stackView = UIStackView(arrangedSubviews: [titleLabel, bodyLabel])
