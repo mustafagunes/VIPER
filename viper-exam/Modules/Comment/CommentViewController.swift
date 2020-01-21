@@ -25,6 +25,7 @@ class CommentViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
         makeLayout()
+        self.showLoadingDialog()
         presenter?.getComments()
     }
     
@@ -57,9 +58,11 @@ extension CommentViewController: CommentViewProtocol {
     
     func setComments(comments: [Comment]) {
         self.comments = comments
+        self.hideLoadingDialog()
     }
     
     func errorService(message: String) {
+        self.hideLoadingDialog()
         self.showActivityPopup(title: message)
     }
 }

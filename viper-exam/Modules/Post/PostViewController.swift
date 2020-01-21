@@ -32,6 +32,7 @@ class PostViewController: UIViewController {
         self.title = "POSTS"
         self.view.backgroundColor = .white
         self.createComponents()
+        self.showLoadingDialog()
         self.presenter?.getPosts()
     }
 }
@@ -58,9 +59,11 @@ extension PostViewController: PostViewProtocol {
     
     func setPost(posts: [Post]) {
         self.posts = posts
+        self.hideLoadingDialog()
     }
     
     func errorService(message: String) {
+        self.hideLoadingDialog()
         self.showActivityPopup(title: message)
     }
 }

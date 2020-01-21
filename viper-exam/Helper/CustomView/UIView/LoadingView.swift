@@ -51,7 +51,7 @@ class LoadingView: UIView {
         self.loadingView.addSubview(loadingLabel)
         loadingLabel.textColor = .white
         loadingLabel.font = UIFont.systemFont(ofSize: 20)
-        loadingLabel.text = "Yükleniyor"
+        loadingLabel.text = "Loading..."
         loadingLabel.snp.makeConstraints { (make) in
             make.centerX.equalTo(activityIndicatorView)
             make.top.equalTo(activityIndicatorView.snp.bottom).offset(10)
