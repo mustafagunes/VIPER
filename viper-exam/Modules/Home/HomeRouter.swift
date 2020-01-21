@@ -42,4 +42,10 @@ extension HomeRouter: HomeWireframeProtocol {
         let commentVC = CommentRouter.createModule()
         viewController?.navigationController?.pushViewController(commentVC, animated: true)
     }
+    
+    // MARK: - Show AlbumViewController
+    func showAlbums() {
+        let albumVC = AlbumRouter.createModule()
+        viewController?.navigationController?.pushViewController(albumVC, animated: true)
+    }
 }
