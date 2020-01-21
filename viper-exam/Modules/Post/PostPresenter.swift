@@ -22,14 +22,14 @@ class PostPresenter: PostPresenterProtocol {
         self.interactor = interactor
         self.router = router
     }
-}
-
-// MARK: - PostInteractorOutputProtocol
-extension PostPresenter: PostInteractorOutputProtocol {
     
     func getPosts() {
         interactor?.getPosts()
     }
+}
+
+// MARK: - PostInteractorOutputProtocol
+extension PostPresenter: PostInteractorOutputProtocol {
     
     func resultPosts(posts: [Post]) {
         view?.setPost(posts: posts)

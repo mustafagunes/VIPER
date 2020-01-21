@@ -12,8 +12,11 @@ struct NetworkConfig {
     static let baseURL: String = "https://jsonplaceholder.typicode.com/"
     
     enum RequestPath: String {
-        case posts = "posts"
-        case todos = "todos"
-        case users = "users"
+        case posts
+        case comments
+        case albums
+        case photos
+        case todos
+        case users
     }
 }
