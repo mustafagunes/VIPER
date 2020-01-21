@@ -48,4 +48,10 @@ extension HomeRouter: HomeWireframeProtocol {
         let albumVC = AlbumRouter.createModule()
         viewController?.navigationController?.pushViewController(albumVC, animated: true)
     }
+    
+    // MARK: - Show PhotoViewController
+    func showPhotos() {
+        let photoVC = PhotoRouter.createModule()
+        viewController?.navigationController?.pushViewController(photoVC, animated: true)
+    }
 }

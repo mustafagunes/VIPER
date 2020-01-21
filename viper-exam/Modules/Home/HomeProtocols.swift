@@ -14,6 +14,7 @@ protocol HomeWireframeProtocol: class {
     func showPosts()
     func showComments()
     func showAlbums()
+    func showPhotos()
 }
 
 // MARK: - Presenter
@@ -21,6 +22,7 @@ protocol HomePresenterProtocol: class {
     func showPosts()
     func showComments()
     func showAlbums()
+    func showPhotos()
 }
 
 // MARK: - View
