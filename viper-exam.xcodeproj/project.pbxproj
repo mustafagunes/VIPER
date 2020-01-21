@@ -37,6 +37,16 @@
 		D9546AEA23D45B5900947AB8 /* Encode+DecodeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9546AE923D45B5900947AB8 /* Encode+DecodeExtensions.swift */; };
 		D9546AEC23D4862D00947AB8 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9546AEB23D4862D00947AB8 /* NetworkErrors.swift */; };
 		D95E363D23D71B72008797D0 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E363C23D71B72008797D0 /* UIColorExtensions.swift */; };
+		D95E364023D71FCD008797D0 /* GetPhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E363F23D71FCD008797D0 /* GetPhotoRequest.swift */; };
+		D95E364823D72021008797D0 /* PhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E364223D72021008797D0 /* PhotoPresenter.swift */; };
+		D95E364923D72021008797D0 /* PhotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E364323D72021008797D0 /* PhotoRouter.swift */; };
+		D95E364A23D72021008797D0 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E364423D72021008797D0 /* PhotoViewController.swift */; };
+		D95E364B23D72021008797D0 /* PhotoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E364523D72021008797D0 /* PhotoProtocols.swift */; };
+		D95E364C23D72021008797D0 /* PhotoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E364623D72021008797D0 /* PhotoInteractor.swift */; };
+		D95E364F23D7202F008797D0 /* PhotoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E364E23D7202F008797D0 /* PhotoEntity.swift */; };
+		D95E365323D72297008797D0 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E365123D72297008797D0 /* PhotoCell.swift */; };
+		D95E365423D72297008797D0 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95E365223D72297008797D0 /* PhotoCell.xib */; };
+		D95E365623D72436008797D0 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95E365523D72436008797D0 /* UIImageViewExtensions.swift */; };
 		D98A9A5C23D5D470008378CC /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5623D5D470008378CC /* PostPresenter.swift */; };
 		D98A9A5D23D5D470008378CC /* PostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5723D5D470008378CC /* PostRouter.swift */; };
 		D98A9A5E23D5D470008378CC /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A5823D5D470008378CC /* PostViewController.swift */; };
@@ -95,6 +105,16 @@
 		D9546AE923D45B5900947AB8 /* Encode+DecodeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encode+DecodeExtensions.swift"; sourceTree = "<group>"; };
 		D9546AEB23D4862D00947AB8 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		D95E363C23D71B72008797D0 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		D95E363F23D71FCD008797D0 /* GetPhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotoRequest.swift; sourceTree = "<group>"; };
+		D95E364223D72021008797D0 /* PhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresenter.swift; sourceTree = "<group>"; };
+		D95E364323D72021008797D0 /* PhotoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRouter.swift; sourceTree = "<group>"; };
+		D95E364423D72021008797D0 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		D95E364523D72021008797D0 /* PhotoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProtocols.swift; sourceTree = "<group>"; };
+		D95E364623D72021008797D0 /* PhotoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInteractor.swift; sourceTree = "<group>"; };
+		D95E364E23D7202F008797D0 /* PhotoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEntity.swift; sourceTree = "<group>"; };
+		D95E365123D72297008797D0 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		D95E365223D72297008797D0 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		D95E365523D72436008797D0 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		D98A9A5623D5D470008378CC /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
 		D98A9A5723D5D470008378CC /* PostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRouter.swift; sourceTree = "<group>"; };
 		D98A9A5823D5D470008378CC /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +236,7 @@
 				D98A9A5523D5D456008378CC /* Post */,
 				D94D730223D6EE3300E760BB /* Comment */,
 				D916F36423D711B9003DF4F2 /* Album */,
+				D95E364123D7200C008797D0 /* Photos */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -297,6 +318,7 @@
 				D98A9A7023D5EE65008378CC /* UIAlertControllerExtensions.swift */,
 				D98A9A7223D5EEA4008378CC /* UIViewControllerExtensions.swift */,
 				D95E363C23D71B72008797D0 /* UIColorExtensions.swift */,
+				D95E365523D72436008797D0 /* UIImageViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -318,8 +340,40 @@
 				D98A9A6D23D5ECC0008378CC /* Posts */,
 				D94D731123D6F09300E760BB /* Comment */,
 				D916F37823D716B6003DF4F2 /* Album */,
+				D95E363E23D71FAF008797D0 /* Photo */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		D95E363E23D71FAF008797D0 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				D95E363F23D71FCD008797D0 /* GetPhotoRequest.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		D95E364123D7200C008797D0 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				D95E365023D72282008797D0 /* PhotoCell */,
+				D95E364223D72021008797D0 /* PhotoPresenter.swift */,
+				D95E364323D72021008797D0 /* PhotoRouter.swift */,
+				D95E364423D72021008797D0 /* PhotoViewController.swift */,
+				D95E364523D72021008797D0 /* PhotoProtocols.swift */,
+				D95E364623D72021008797D0 /* PhotoInteractor.swift */,
+				D95E364E23D7202F008797D0 /* PhotoEntity.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		D95E365023D72282008797D0 /* PhotoCell */ = {
+			isa = PBXGroup;
+			children = (
+				D95E365123D72297008797D0 /* PhotoCell.swift */,
+				D95E365223D72297008797D0 /* PhotoCell.xib */,
+			);
+			path = PhotoCell;
 			sourceTree = "<group>";
 		};
 		D98A9A5523D5D456008378CC /* Post */ = {
@@ -459,6 +513,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95E365423D72297008797D0 /* PhotoCell.xib in Resources */,
 				D939837E23D1A31700086080 /* LaunchScreen.storyboard in Resources */,
 				D98A9A6623D5E50A008378CC /* PostCell.xib in Resources */,
 				D916F37723D71244003DF4F2 /* AlbumCell.xib in Resources */,
@@ -518,11 +573,14 @@
 			files = (
 				D9546AE723D449CE00947AB8 /* Logger.swift in Sources */,
 				D939838C23D1B1F900086080 /* NetworkManager.swift in Sources */,
+				D95E364B23D72021008797D0 /* PhotoProtocols.swift in Sources */,
 				D939838E23D1BAEA00086080 /* NetworkConfigurator.swift in Sources */,
 				D98A9A6A23D5E874008378CC /* StringExtensions.swift in Sources */,
+				D95E364823D72021008797D0 /* PhotoPresenter.swift in Sources */,
 				D916F37223D71200003DF4F2 /* AlbumEntity.swift in Sources */,
 				D94D730D23D6EE4A00E760BB /* CommentInteractor.swift in Sources */,
 				D94D731323D6F0A600E760BB /* GetCommentRequest.swift in Sources */,
+				D95E364023D71FCD008797D0 /* GetPhotoRequest.swift in Sources */,
 				D98A9A5F23D5D470008378CC /* PostProtocols.swift in Sources */,
 				D94D731723D6F41000E760BB /* CommentCell.swift in Sources */,
 				D916F36C23D711D7003DF4F2 /* AlbumRouter.swift in Sources */,
@@ -532,12 +590,15 @@
 				D94D730B23D6EE4A00E760BB /* CommentViewController.swift in Sources */,
 				D916F37A23D716CB003DF4F2 /* GetAlbumRequest.swift in Sources */,
 				D98A9A6023D5D470008378CC /* PostInteractor.swift in Sources */,
+				D95E364F23D7202F008797D0 /* PhotoEntity.swift in Sources */,
 				D9546AEA23D45B5900947AB8 /* Encode+DecodeExtensions.swift in Sources */,
 				D916F36D23D711D7003DF4F2 /* AlbumViewController.swift in Sources */,
 				D9BB5B9523D4934C0078A7A1 /* HomeProtocols.swift in Sources */,
 				D98A9A7123D5EE65008378CC /* UIAlertControllerExtensions.swift in Sources */,
 				D98A9A7723D5EEEB008378CC /* LoadingView.swift in Sources */,
+				D95E364923D72021008797D0 /* PhotoRouter.swift in Sources */,
 				D98A9A6F23D5ECD7008378CC /* GetPostsRequest.swift in Sources */,
+				D95E364A23D72021008797D0 /* PhotoViewController.swift in Sources */,
 				D916F36F23D711D7003DF4F2 /* AlbumInteractor.swift in Sources */,
 				D98A9A5C23D5D470008378CC /* PostPresenter.swift in Sources */,
 				D98A9A7B23D5EF37008378CC /* LoadingViewPresenter.swift in Sources */,
@@ -548,13 +609,16 @@
 				D98A9A6C23D5E9FC008378CC /* PostEntity.swift in Sources */,
 				D98A9A6823D5E531008378CC /* CellHelper.swift in Sources */,
 				D939838A23D1AE1200086080 /* NetworkProtocols.swift in Sources */,
+				D95E364C23D72021008797D0 /* PhotoInteractor.swift in Sources */,
 				D95E363D23D71B72008797D0 /* UIColorExtensions.swift in Sources */,
+				D95E365623D72436008797D0 /* UIImageViewExtensions.swift in Sources */,
 				D98A9A7323D5EEA4008378CC /* UIViewControllerExtensions.swift in Sources */,
 				D98A9A6523D5E50A008378CC /* PostCell.swift in Sources */,
 				D9BB5B9423D4934C0078A7A1 /* HomeViewController.swift in Sources */,
 				D939837223D1A31600086080 /* AppDelegate.swift in Sources */,
 				D916F37623D71244003DF4F2 /* AlbumCell.swift in Sources */,
 				D9BB5B9A23D495DE0078A7A1 /* AppButton.swift in Sources */,
+				D95E365323D72297008797D0 /* PhotoCell.swift in Sources */,
 				D94D731023D6EE6100E760BB /* CommentEntity.swift in Sources */,
 				D94D730C23D6EE4A00E760BB /* CommentProtocols.swift in Sources */,
 				D9546AEC23D4862D00947AB8 /* NetworkErrors.swift in Sources */,
