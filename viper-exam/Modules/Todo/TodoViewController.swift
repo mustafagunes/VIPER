@@ -1,19 +1,19 @@
 //
-//  PhotoViewController.swift
+//  TodoViewController.swift
 //  viper-exam
 //
-//  Created Mustafa GUNES on 21.01.2020.
+//  Created Mustafa GUNES on 22.01.2020.
 //  Copyright © 2020 Mustafa GUNES. All rights reserved.
 //
 //
 
 import UIKit
 
-class PhotoViewController: UIViewController {
+class TodoViewController: UIViewController {
 
     // MARK: - Definitions
-	var presenter: PhotoPresenterProtocol?
-    var photos: [Photo] = [] {
+	var presenter: TodoPresenterProtocol?
+    var todos: [Todo] = [] {
         didSet {
             collectionView.reloadData()
         }
@@ -25,24 +25,24 @@ class PhotoViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
         makeLayout()
-        self.showLoadingDialog()
-        self.presenter?.getPhotos()
+        showLoadingDialog()
+        presenter?.getTodos()
     }
     
     fileprivate func makeLayout() {
-        self.title = "PHOTOS"
+        self.title = "TODOS"
         self.view.backgroundColor = .white
         self.createComponents()
     }
 }
 
 // MARK: - Create Components
-extension PhotoViewController {
+extension TodoViewController {
     
     fileprivate func createComponents() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(PhotoCell.self)
+        collectionView.register(TodoCell.self)
         collectionView.backgroundColor = .white
         
         self.view.addSubview(collectionView)
@@ -53,11 +53,11 @@ extension PhotoViewController {
     }
 }
 
-// MARK: - PhotoViewProtocol
-extension PhotoViewController: PhotoViewProtocol {
+// MARK: - TodoViewProtocol
+extension TodoViewController: TodoViewProtocol {
     
-    func setPhotos(photos: [Photo]) {
-        self.photos = photos
+    func setTodos(todos: [Todo]) {
+        self.todos = todos
         hideLoadingDialog()
     }
     
@@ -68,31 +68,34 @@ extension PhotoViewController: PhotoViewProtocol {
 }
 
 // MARK: - UICollectionViewDataSource
-extension PhotoViewController: UICollectionViewDataSource {
+extension TodoViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count
+        return todos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: PhotoCell = collectionView.dequeueReusableCell(for: indexPath)
-        cell.setCell(photo: self.photos[indexPath.row])
+        let cell: TodoCell = collectionView.dequeueReusableCell(for: indexPath)
+        cell.setCell(todo: self.todos[indexPath.row])
         return cell
     }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
-extension PhotoViewController: UICollectionViewDelegateFlowLayout {
+extension TodoViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width / 3
-        let cellWidth = width - 25
+        let width = UIScreen.main.bounds.width / 2
+        let cellWidth = width - 30
         let cellHeight = cellWidth
         return CGSize(width: cellWidth, height: cellHeight)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
 }
-

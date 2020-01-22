@@ -32,15 +32,15 @@ class CommentCell: UICollectionViewCell, ReusableView, NibLoadableView {
     fileprivate func makeLayout() {
         
         self.layer.cornerRadius = 6
-        self.backgroundColor = .systemTeal
+        self.backgroundColor = UIColor.random
 
         emailLabel.font = .systemFont(ofSize: 13)
-        emailLabel.textColor = .black
+        emailLabel.textColor = backgroundColor!.isDarkColor ? .white : .black
         emailLabel.numberOfLines = 0
         emailLabel.lineBreakMode = .byWordWrapping
         
         bodyLabel.font = .systemFont(ofSize: 13)
-        bodyLabel.textColor = .black
+        bodyLabel.textColor = backgroundColor!.isDarkColor ? .white : .black
         bodyLabel.numberOfLines = 0
         bodyLabel.lineBreakMode = .byWordWrapping
         

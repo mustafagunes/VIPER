@@ -39,4 +39,8 @@ extension HomePresenter: HomePresenterProtocol {
     func showPhotos() {
         router.showPhotos()
     }
+    
+    func showTodos() {
+        router.showTodos()
+    }
 }
