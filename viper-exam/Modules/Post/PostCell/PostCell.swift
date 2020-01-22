@@ -33,15 +33,15 @@ class PostCell: UICollectionViewCell, ReusableView, NibLoadableView {
     fileprivate func makeLayout() {
         
         self.layer.cornerRadius = 6
-        self.backgroundColor = .systemGreen
+        self.backgroundColor = UIColor.random
 
         titleLabel.font = .systemFont(ofSize: 13)
-        titleLabel.textColor = .black
+        titleLabel.textColor = backgroundColor!.isDarkColor ? .white : .black
         titleLabel.numberOfLines = 0
         titleLabel.lineBreakMode = .byWordWrapping
         
         bodyLabel.font = .systemFont(ofSize: 13)
-        bodyLabel.textColor = .black
+        bodyLabel.textColor = backgroundColor!.isDarkColor ? .white : .black
         bodyLabel.numberOfLines = 0
         bodyLabel.lineBreakMode = .byWordWrapping
         

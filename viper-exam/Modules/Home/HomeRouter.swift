@@ -54,4 +54,10 @@ extension HomeRouter: HomeWireframeProtocol {
         let photoVC = PhotoRouter.createModule()
         viewController?.navigationController?.pushViewController(photoVC, animated: true)
     }
+    
+    // MARK: - Show TodoViewController
+    func showTodos() {
+        let todoVC = TodoRouter.createModule()
+        viewController?.navigationController?.pushViewController(todoVC, animated: true)
+    }
 }
