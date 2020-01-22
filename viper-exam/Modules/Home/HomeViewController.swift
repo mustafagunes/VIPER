@@ -48,7 +48,7 @@ class HomeViewController: UIViewController, HomeViewProtocol {
         case todoButton:
             presenter?.showTodos()
         case userButton:
-            break
+            presenter?.showUsers()
         default:
             break
         }

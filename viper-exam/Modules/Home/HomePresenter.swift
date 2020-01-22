@@ -43,4 +43,8 @@ extension HomePresenter: HomePresenterProtocol {
     func showTodos() {
         router.showTodos()
     }
+    
+    func showUsers() {
+        router.showUsers()
+    }
 }

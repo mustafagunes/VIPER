@@ -60,4 +60,10 @@ extension HomeRouter: HomeWireframeProtocol {
         let todoVC = TodoRouter.createModule()
         viewController?.navigationController?.pushViewController(todoVC, animated: true)
     }
+    
+    // MARK: - Show UserViewController
+    func showUsers() {
+        let userVC = UserRouter.createModule()
+        viewController?.navigationController?.pushViewController(userVC, animated: true)
+    }
 }

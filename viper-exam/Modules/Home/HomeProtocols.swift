@@ -16,6 +16,7 @@ protocol HomeWireframeProtocol: class {
     func showAlbums()
     func showPhotos()
     func showTodos()
+    func showUsers()
 }
 
 // MARK: - Presenter
@@ -25,6 +26,7 @@ protocol HomePresenterProtocol: class {
     func showAlbums()
     func showPhotos()
     func showTodos()
+    func showUsers()
 }
 
 // MARK: - View
