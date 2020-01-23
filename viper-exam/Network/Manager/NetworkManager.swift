@@ -35,7 +35,7 @@ final class NetworkManager {
             AppDelegate.shared.gotoMain()*/
             return
         }
-        if let data = response.data, let serviceError = ClientError.decode(data) {
+        if let data = response.data, let serviceError = ClientError.init(from: data) {
             if let json = String(data: data, encoding: .utf8) {
                 Logger.log(output:"Response JSON: \(json)")
             }
@@ -89,7 +89,7 @@ final class NetworkManager {
                     failure(.notDataReturned)
                     return
                 }
-                guard let parsed = T.decode(json) else {
+                guard let parsed = T.init(from: json) else {
                     failure(.decodingFailure)
                     return
                 }
@@ -118,7 +118,7 @@ final class NetworkManager {
                     failure(.notDataReturned)
                     return
                 }
-                guard let parsed = ResponseArray<T>.decode(json) else {
+                guard let parsed = ResponseArray<T>.init(from: json) else {
                     failure(.decodingFailure)
                     return
                 }
