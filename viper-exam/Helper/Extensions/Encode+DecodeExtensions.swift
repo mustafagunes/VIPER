@@ -17,8 +17,13 @@ extension Encodable {
 }
 
 extension Decodable {
-    static func decode(_ data: Data) -> Self? {
-        let decoder = JSONDecoder()
-        return try? decoder.decode(self, from: data)
+    
+    /// Parsing the model in Decodable type
+    /// - Parameters:
+    ///   - data: Data.
+    ///   - decoder: JSONDecoder. Initialized by default
+    init?(from data: Data, using decoder: JSONDecoder = .init()) {
+        guard let parsed = try? decoder.decode(Self.self, from: data) else { return nil }
+        self = parsed
     }
 }
