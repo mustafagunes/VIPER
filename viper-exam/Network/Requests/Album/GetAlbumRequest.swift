@@ -7,12 +7,13 @@
 //
 
 import Alamofire
+import NetworkManager
 
 struct GetAlbumRequest: RequestArrayDelegate {
     
     typealias ResultObjectType = Album
     
-    var method: HTTPMethod = .get
-    var path: NetworkConfig.RequestPath = .albums
-    var parameters: Parameters?
+    var method: HttpMethod = .get
+    var path: String = RequestPath.albums.rawValue
+    var parameters: Params?
 }

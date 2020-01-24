@@ -6,14 +6,14 @@
 //  Copyright © 2020 Mustafa GUNES. All rights reserved.
 //
 
-import Alamofire
+import NetworkManager
 
 struct GetTodoRequest: RequestArrayDelegate {
     
     typealias ResultObjectType = Todo
     
-    var method: HTTPMethod = .get
-    var path: NetworkConfig.RequestPath = .todos
-    var parameters: Parameters?
+    var method: HttpMethod = .get
+    var path: String = RequestPath.todos.rawValue
+    var parameters: Params?
 }
 
