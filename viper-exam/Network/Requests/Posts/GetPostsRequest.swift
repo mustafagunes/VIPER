@@ -6,13 +6,13 @@
 //  Copyright © 2020 Mustafa GUNES. All rights reserved.
 //
 
-import Alamofire
+import NetworkManager
 
 struct GetPostsRequest: RequestArrayDelegate {
     
     typealias ResultObjectType = Post
     
-    var method: HTTPMethod = .get
-    var path: NetworkConfig.RequestPath = .posts
-    var parameters: Parameters?
+    var method: HttpMethod = .get
+    var path: String = RequestPath.posts.rawValue
+    var parameters: Params?
 }

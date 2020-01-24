@@ -6,13 +6,13 @@
 //  Copyright © 2020 Mustafa GUNES. All rights reserved.
 //
 
-import Alamofire
+import NetworkManager
 
 struct GetCommentRequest: RequestArrayDelegate {
     
     typealias ResultObjectType = Comment
     
-    var method: HTTPMethod = .get
-    var path: NetworkConfig.RequestPath = .comments
-    var parameters: Parameters?
+    var method: HttpMethod = .get
+    var path: String = RequestPath.comments.rawValue
+    var parameters: Params?
 }

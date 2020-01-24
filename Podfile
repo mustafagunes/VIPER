@@ -6,7 +6,6 @@ target 'viper-exam' do
   use_frameworks!
 
   # Pods for viper-exam
-  pod 'Alamofire'
   pod 'SnapKit'
   pod 'Kingfisher'
 

@@ -6,13 +6,13 @@
 //  Copyright © 2020 Mustafa GUNES. All rights reserved.
 //
 
-import Alamofire
+import NetworkManager
 
 struct GetUserRequest: RequestArrayDelegate {
     
     typealias ResultObjectType = User
     
-    var method: HTTPMethod = .get
-    var path: NetworkConfig.RequestPath = .users
-    var parameters: Parameters?
+    var method: HttpMethod = .get
+    var path: String = RequestPath.users.rawValue
+    var parameters: Params?
 }
