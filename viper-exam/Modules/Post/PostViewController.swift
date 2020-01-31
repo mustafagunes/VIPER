@@ -30,7 +30,7 @@ class PostViewController: UIViewController {
     
     fileprivate func makeLayout() {
         self.title = "POSTS"
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .viewBackground
         self.createComponents()
         self.showLoadingDialog()
         self.presenter?.getPosts()
@@ -45,7 +45,7 @@ extension PostViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(PostCell.self)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .viewBackground
         
         self.view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in

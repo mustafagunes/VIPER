@@ -31,7 +31,7 @@ class PhotoViewController: UIViewController {
     
     fileprivate func makeLayout() {
         self.title = "PHOTOS"
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .viewBackground
         self.createComponents()
     }
 }
@@ -43,7 +43,7 @@ extension PhotoViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(PhotoCell.self)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .viewBackground
         
         self.view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in

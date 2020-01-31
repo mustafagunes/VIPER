@@ -31,7 +31,7 @@ class UserViewController: UIViewController {
     
     fileprivate func makeLayout() {
         self.title = "USERS"
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .viewBackground
         self.createComponents()
     }
 }
@@ -43,7 +43,7 @@ extension UserViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UserCell.self)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .viewBackground
         
         self.view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in

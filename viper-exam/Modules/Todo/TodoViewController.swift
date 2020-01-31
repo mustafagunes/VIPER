@@ -31,7 +31,7 @@ class TodoViewController: UIViewController {
     
     fileprivate func makeLayout() {
         self.title = "TODOS"
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .viewBackground
         self.createComponents()
     }
 }
@@ -43,7 +43,7 @@ extension TodoViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(TodoCell.self)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .viewBackground
         
         self.view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in
