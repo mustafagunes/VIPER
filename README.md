@@ -7,13 +7,13 @@
 
 ## Images from within the application
 <p float="left">
-    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/1.png" width="250" height="500">
-    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/2.png" width="250" height="500">
-    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/3.png" width="250" height="500">
-    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/4.png" width="250" height="500">
-    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/5.png" width="250" height="500">
-    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/6.png" width="250" height="500">
-    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/7.png" width="250" height="500">
+    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/1.png" width="280" height="630">
+    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/2.png" width="280" height="630">
+    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/3.png" width="280" height="630">
+    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/4.png" width="280" height="630">
+    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/5.png" width="280" height="630">
+    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/6.png" width="280" height="630">
+    <img src="https://github.com/mustafagunes/VIPER/blob/master/SS/7.png" width="280" height="630">
 </p>
 
 
