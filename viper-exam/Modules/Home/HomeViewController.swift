@@ -31,8 +31,25 @@ class HomeViewController: UIViewController, HomeViewProtocol {
     // MARK: - posts, comments, albums, photos, todos, users list
     fileprivate func makeLayout() {
         self.title = "HOME"
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .viewBackground
+        self.setNavigationbar()
         self.createComponents()
+    }
+    
+    fileprivate func setNavigationbar() {
+        if #available(iOS 13.0, *) {
+            let navBarAppearance = UINavigationBarAppearance()
+            navBarAppearance.configureWithOpaqueBackground()
+            navBarAppearance.backgroundColor = .navBarBackground
+            navigationController?.navigationBar.barStyle = .black
+            navigationController?.navigationBar.tintColor = UIColor(hue:0.620, saturation:0.75, brightness:1.0, alpha:1)
+            navigationController?.navigationBar.standardAppearance = navBarAppearance
+            navigationController?.navigationBar.scrollEdgeAppearance = navBarAppearance
+        } else {
+            navigationController?.navigationBar.backgroundColor = .navBarBackground
+            navigationController?.navigationBar.barStyle = .default
+            navigationController?.navigationBar.tintColor = UIColor(hue:0.620, saturation:0.75, brightness:1.0, alpha:1)
+        }
     }
     
     @objc func buttonTapped(sender: UIButton) {

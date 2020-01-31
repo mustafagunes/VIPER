@@ -31,7 +31,7 @@ class CommentViewController: UIViewController {
     
     fileprivate func makeLayout() {
         self.title = "COMMENTS"
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .viewBackground
         self.createComponents()
     }
 }
@@ -43,7 +43,7 @@ extension CommentViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(CommentCell.self)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .viewBackground
         
         self.view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in

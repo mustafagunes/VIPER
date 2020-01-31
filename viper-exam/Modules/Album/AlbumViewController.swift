@@ -31,7 +31,7 @@ class AlbumViewController: UIViewController {
     
     fileprivate func makeLayout() {
         self.title = "ALBUMS"
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .viewBackground
         self.createComponents()
     }
 }
@@ -43,7 +43,7 @@ extension AlbumViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(AlbumCell.self)
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .viewBackground
         
         self.view.addSubview(collectionView)
         collectionView.snp.makeConstraints { (make) in
