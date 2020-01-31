@@ -11,6 +11,7 @@
 		D90FF1DE23E452820001409F /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90FF1DD23E452820001409F /* Color.xcassets */; };
 		D90FF1E223E453ED0001409F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90FF1E123E453EC0001409F /* UIColorExtensions.swift */; };
 		D90FF1E423E454540001409F /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90FF1E323E454540001409F /* DarkMode.swift */; };
+		D90FF1E623E458760001409F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D90FF1E523E458760001409F /* README.md */; };
 		D916F36B23D711D7003DF4F2 /* AlbumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36523D711D7003DF4F2 /* AlbumPresenter.swift */; };
 		D916F36C23D711D7003DF4F2 /* AlbumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36623D711D7003DF4F2 /* AlbumRouter.swift */; };
 		D916F36D23D711D7003DF4F2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36723D711D7003DF4F2 /* AlbumViewController.swift */; };
@@ -131,6 +132,7 @@
 		D90FF1DD23E452820001409F /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		D90FF1E123E453EC0001409F /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		D90FF1E323E454540001409F /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
+		D90FF1E523E458760001409F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D916F36523D711D7003DF4F2 /* AlbumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPresenter.swift; sourceTree = "<group>"; };
 		D916F36623D711D7003DF4F2 /* AlbumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRouter.swift; sourceTree = "<group>"; };
 		D916F36723D711D7003DF4F2 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 		D939836523D1A31600086080 = {
 			isa = PBXGroup;
 			children = (
+				D90FF1E523E458760001409F /* README.md */,
 				D939837023D1A31600086080 /* viper-exam */,
 				D97204A823D9A25000C1E249 /* VIPER-UITests */,
 				D97204B623D9A66700C1E249 /* VIPER-Tests */,
@@ -746,6 +749,7 @@
 			files = (
 				D95E365423D72297008797D0 /* PhotoCell.xib in Resources */,
 				D939837E23D1A31700086080 /* LaunchScreen.storyboard in Resources */,
+				D90FF1E623E458760001409F /* README.md in Resources */,
 				D9E2B93323D825AA008AE1A5 /* TodoCell.xib in Resources */,
 				D98A9A6623D5E50A008378CC /* PostCell.xib in Resources */,
 				D9A7DC0A23D86F3F00AC1E35 /* UserCell.xib in Resources */,
