@@ -16,4 +16,14 @@ struct GetAlbumRequest: RequestArrayDelegate {
     var method: HttpMethod = .get
     var path: String = RequestPath.albums.rawValue
     var parameters: Params?
+    
+    init() {
+        printFileAndFunction()
+    }
+    
+    func printFileAndFunction() {
+        print("----------------------------------------------------")
+        print(#file.components(separatedBy: "/").last! + " - " + #function)
+        print("----------------------------------------------------")
+    }
 }

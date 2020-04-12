@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" "4.9.1"
+github "ReactiveX/RxSwift" "5.1.1"
+github "RxSwiftCommunity/RxAlamofire" "5.1.0"
+github "SnapKit/SnapKit" "5.0.1"
+github "onevcat/Kingfisher" "5.13.4"

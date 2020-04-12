@@ -22,4 +22,12 @@ extension RequestArrayDelegate {
     public var baseUrl: String {
         return "https://jsonplaceholder.typicode.com/"
     }
+    
+    // MARK: - Whether or not status the session is open
+    public var headers: [String: String] {
+        var header: [String: String] = [:]
+        header["Accept"] = "application/json"
+        header["Authorization"] = "Bearer test"
+        return header
+    }
 }

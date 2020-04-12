@@ -15,4 +15,14 @@ struct GetCommentRequest: RequestArrayDelegate {
     var method: HttpMethod = .get
     var path: String = RequestPath.comments.rawValue
     var parameters: Params?
+    
+    init() {
+        printFileAndFunction()
+    }
+    
+    func printFileAndFunction() {
+        print("----------------------------------------------------")
+        print(#file.components(separatedBy: "/").last! + " - " + #function)
+        print("----------------------------------------------------")
+    }
 }

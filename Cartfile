@@ -1,0 +1,4 @@
+github "SnapKit/SnapKit"
+github "onevcat/Kingfisher"
+github "ReactiveX/RxSwift"
+github "RxSwiftCommunity/RxAlamofire"
