@@ -46,7 +46,8 @@ extension TodoViewController {
         collectionView.backgroundColor = .viewBackground
         
         self.view.addSubview(collectionView)
-        collectionView.snp.makeConstraints { (make) in
+        collectionView.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
             make.top.equalTo(self.view.safeAreaLayoutGuide)
             make.leading.trailing.bottom.equalToSuperview()
         }
@@ -84,15 +85,20 @@ extension TodoViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension TodoViewController: UICollectionViewDelegateFlowLayout {
     
+    private func calculateCellSize() -> CGSize {
+        let width = UIScreen.main.bounds.width / 2
+        let cellWidth = width - 30
+        let cellHeight = cellWidth
+        return CGSize(width: cellWidth, height: cellHeight)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width / 2
-        let cellWidth = width - 30
-        let cellHeight = cellWidth
-        return CGSize(width: cellWidth, height: cellHeight)
+        let size = calculateCellSize()
+        return CGSize(width: size.width, height: size.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

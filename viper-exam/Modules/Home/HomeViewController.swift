@@ -103,9 +103,10 @@ extension HomeViewController {
         stackView.spacing = 15
         
         self.view.addSubview(stackView)
-        stackView.snp.makeConstraints { (make) in
+        stackView.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
             make.centerX.centerY.equalToSuperview()
-            make.leading.trailing.equalTo(view).inset(30)
+            make.leading.trailing.equalTo(self.view).inset(30)
         }
     }
 }

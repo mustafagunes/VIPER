@@ -33,7 +33,10 @@ class UserCell: UICollectionViewCell, ReusableView, NibLoadableView {
     }
     
     fileprivate func setMapView(user: User) {
-        let userCoordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: user.address.geo.lat.toDouble ?? 0, longitude: user.address.geo.lng.toDouble ?? 0)
+        let userCoordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(
+            latitude: user.address.geo.lat.toDouble ?? 0,
+            longitude: user.address.geo.lng.toDouble ?? 0
+        )
         let annotation = MapAnnotation(title: user.name, subTitle: user.email, coordinate: userCoordinate)
         
         mapView.isScrollEnabled = false
@@ -62,25 +65,28 @@ class UserCell: UICollectionViewCell, ReusableView, NibLoadableView {
         emailLabel.textAlignment = .center
 
         self.addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { (make) in
+        titleLabel.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
             make.leading.trailing.top.equalTo(self).inset(15)
             make.height.equalTo(20)
         }
         
         self.addSubview(emailLabel)
-        emailLabel.snp.makeConstraints { (make) in
-            make.leading.trailing.equalTo(titleLabel)
-            make.top.equalTo(titleLabel.snp.bottom).offset(5)
+        emailLabel.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
+            make.leading.trailing.equalTo(self.titleLabel)
+            make.top.equalTo(self.titleLabel.snp.bottom).offset(5)
             make.height.equalTo(20)
         }
         
         mapView.layer.cornerRadius = 6
         
         self.addSubview(mapView)
-        mapView.snp.makeConstraints { (make) in
+        mapView.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
             make.centerX.equalToSuperview()
             make.height.equalTo(230)
-            make.top.equalTo(emailLabel.snp.bottom).offset(10)
+            make.top.equalTo(self.emailLabel.snp.bottom).offset(10)
             make.trailing.leading.bottom.equalToSuperview().inset(15)
         }
     }

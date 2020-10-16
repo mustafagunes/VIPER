@@ -17,9 +17,11 @@ class PhotoInteractor: PhotoInteractorInputProtocol {
     // MARK: - Method
     func getPhotos() {
         let request = GetPhotoRequest()
-        request.fetchData(success: { (photos) in
+        request.fetchData(success: { [weak self] photos in
+            guard let self = self else { return }
             self.presenter?.resultPhotos(photos: photos.array)
-        }) { (error) in
+        }) { [weak self] error in
+            guard let self = self else { return }
             switch error {
             case .serviceError( _, let message):
                 self.presenter?.errorService(message: message)

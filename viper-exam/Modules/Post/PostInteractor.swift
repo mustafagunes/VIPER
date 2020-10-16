@@ -17,9 +17,11 @@ class PostInteractor: PostInteractorInputProtocol {
     // MARK: - Method
     func getPosts() {
         let request = GetPostsRequest()
-        request.fetchData(success: { (posts) in
+        request.fetchData(success: { [weak self] posts in
+            guard let self = self else { return }
             self.presenter?.resultPosts(posts: posts.array)
-        }) { (error) in
+        }) { [weak self] error in
+            guard let self = self else { return }
             switch error {
             case .serviceError( _, let message):
                 self.presenter?.errorService(message: message)

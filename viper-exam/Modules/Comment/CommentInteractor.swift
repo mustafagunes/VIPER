@@ -17,9 +17,11 @@ class CommentInteractor: CommentInteractorInputProtocol {
     // MARK: - Method
     func getComments() {
         let request = GetCommentRequest()
-        request.fetchData(success: { (comments) in
+        request.fetchData(success: { [weak self] comments in
+            guard let self = self else { return }
             self.presenter?.resultComments(comments: comments.array)
-        }) { (error) in
+        }) { [weak self] error in
+            guard let self = self else { return }
             switch error {
             case .serviceError( _, let message):
                 self.presenter?.errorService(message: message)

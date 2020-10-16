@@ -17,9 +17,11 @@ class TodoInteractor: TodoInteractorInputProtocol {
     // MARK: - Method
     func getTodos() {
         let request = GetTodoRequest()
-        request.fetchData(success: { (todos) in
+        request.fetchData(success: { [weak self] todos in
+            guard let self = self else { return }
             self.presenter?.resultTodos(todos: todos.array)
-        }) { (error) in
+        }) { [weak self] error in
+            guard let self = self else { return }
             switch error {
             case .serviceError( _, let message):
                 self.presenter?.errorService(message: message)

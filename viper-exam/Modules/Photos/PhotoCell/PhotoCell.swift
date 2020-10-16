@@ -48,10 +48,11 @@ class PhotoCell: UICollectionViewCell, ReusableView, NibLoadableView {
         titleLabel.textAlignment = .center
         
         imageView.addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { (make) in
+        titleLabel.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
             make.height.equalTo(15)
-            make.bottom.equalTo(imageView.snp.bottom).inset(5)
-            make.leading.trailing.equalTo(imageView).inset(10)
+            make.bottom.equalTo(self.imageView.snp.bottom).inset(5)
+            make.leading.trailing.equalTo(self.imageView).inset(10)
         }
     }
 }

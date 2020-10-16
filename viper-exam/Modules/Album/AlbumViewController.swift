@@ -46,7 +46,8 @@ extension AlbumViewController {
         collectionView.backgroundColor = .viewBackground
         
         self.view.addSubview(collectionView)
-        collectionView.snp.makeConstraints { (make) in
+        collectionView.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
             make.top.equalTo(self.view.safeAreaLayoutGuide)
             make.leading.trailing.bottom.equalToSuperview()
         }
@@ -84,15 +85,20 @@ extension AlbumViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension AlbumViewController: UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    private func calculateCellSize(at indexPath: IndexPath) -> CGSize {
         let album = self.albums[indexPath.row]
         let cellWidth = (UIScreen.main.bounds.width / 3) - 20
         let labelWidth = cellWidth
         let cellHeight = album.title.height(withConstrainedWidth: labelWidth, font: .systemFont(ofSize: 13)) + 15
         return CGSize(width: cellWidth, height: cellHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = calculateCellSize(at: indexPath)
+        return CGSize(width: size.width, height: size.height)
     }
 }

@@ -17,9 +17,11 @@ class UserInteractor: UserInteractorInputProtocol {
     // MARK: - Method
     func getUsers() {
         let request = GetUserRequest()
-        request.fetchData(success: { (users) in
+        request.fetchData(success: { [weak self] users in
+            guard let self = self else { return }
             self.presenter?.resultUsers(users: users.array)
-        }) { (error) in
+        }) { [weak self] error in
+            guard let self = self else { return }
             switch error {
             case .serviceError( _, let message):
                 self.presenter?.errorService(message: message)

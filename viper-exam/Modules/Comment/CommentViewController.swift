@@ -46,7 +46,8 @@ extension CommentViewController {
         collectionView.backgroundColor = .viewBackground
         
         self.view.addSubview(collectionView)
-        collectionView.snp.makeConstraints { (make) in
+        collectionView.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
             make.top.equalTo(self.view.safeAreaLayoutGuide)
             make.leading.trailing.bottom.equalToSuperview()
         }
@@ -84,11 +85,7 @@ extension CommentViewController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension CommentViewController: UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    private func calculateCellSize(at indexPath: IndexPath) -> CGSize {
         let comment = self.comments[indexPath.row]
         let width = UIScreen.main.bounds.width
         let cellWidth = width - 40
@@ -97,6 +94,15 @@ extension CommentViewController: UICollectionViewDelegateFlowLayout {
         let bodyHeight = comment.body.height(withConstrainedWidth: labelWidth, font: .systemFont(ofSize: 13))
         let cellHeight = titleHeight + bodyHeight
         return CGSize(width: cellWidth, height: cellHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = calculateCellSize(at: indexPath)
+        return CGSize(width: size.width, height: size.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

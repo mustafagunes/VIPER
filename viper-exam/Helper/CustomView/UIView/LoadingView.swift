@@ -32,7 +32,8 @@ class LoadingView: UIView {
         loadingView.layer.cornerRadius = 12
         loadingView.backgroundColor = UIColor.darkText.withAlphaComponent(0.8)
         loadingView.addBlurAreaForLoading(area: loadingView.bounds, style: .dark)
-        loadingView.snp.makeConstraints { (make) in
+        loadingView.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
             make.width.equalTo(200)
             make.height.equalTo(140)
             make.centerX.centerY.equalTo(self)
@@ -41,7 +42,8 @@ class LoadingView: UIView {
         self.loadingView.addSubview(activityIndicatorView)
         activityIndicatorView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
         activityIndicatorView.color = .white
-        activityIndicatorView.snp.makeConstraints { (make) in
+        activityIndicatorView.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
             make.width.height.equalTo(30)
             make.centerX.equalTo(self).inset(-5)
             make.centerY.equalTo(self)
@@ -52,9 +54,10 @@ class LoadingView: UIView {
         loadingLabel.textColor = .white
         loadingLabel.font = UIFont.systemFont(ofSize: 20)
         loadingLabel.text = "Loading..."
-        loadingLabel.snp.makeConstraints { (make) in
-            make.centerX.equalTo(activityIndicatorView)
-            make.top.equalTo(activityIndicatorView.snp.bottom).offset(10)
+        loadingLabel.snp.makeConstraints { [weak self] make in
+            guard let self = self else { return }
+            make.centerX.equalTo(self.activityIndicatorView)
+            make.top.equalTo(self.activityIndicatorView.snp.bottom).offset(10)
         }
     }
 }
