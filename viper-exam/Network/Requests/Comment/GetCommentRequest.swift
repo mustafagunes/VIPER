@@ -15,4 +15,5 @@ struct GetCommentRequest: RequestArrayDelegate {
     var method: HttpMethod = .get
     var path: String = RequestPath.comments.rawValue
     var parameters: Params?
+    var headers: [String : String] = [:]
 }

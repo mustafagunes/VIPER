@@ -16,4 +16,5 @@ struct GetAlbumRequest: RequestArrayDelegate {
     var method: HttpMethod = .get
     var path: String = RequestPath.albums.rawValue
     var parameters: Params?
+    var headers: [String : String] = [:]
 }

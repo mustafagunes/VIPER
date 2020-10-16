@@ -18,43 +18,43 @@
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/arm.swiftdoc</key>
 		<data>
-		7xc/pyUiZQLtF0uQzqffQAmz7M8=
+		a/CLDWTbqE3tO5aE/2c9aoTcJUw=
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/arm.swiftmodule</key>
 		<data>
-		Ri2MyBnZzEM5OtUdJA4f19wMmqQ=
+		ReiIhVo2djV6mVCUbu/wh+atneI=
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		EtNBPlq8cUcXsZu0R0uw1J/obfU=
+		1ziBa4KQmKypTxpoElcgB3ymadA=
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		bG2cIQs057oxf9c0/ZxnS0X/OhY=
+		Sp3J9BKfEwyURbLT8B40ZtUDtbY=
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		EtNBPlq8cUcXsZu0R0uw1J/obfU=
+		1ziBa4KQmKypTxpoElcgB3ymadA=
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		bG2cIQs057oxf9c0/ZxnS0X/OhY=
+		Sp3J9BKfEwyURbLT8B40ZtUDtbY=
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		7xc/pyUiZQLtF0uQzqffQAmz7M8=
+		a/CLDWTbqE3tO5aE/2c9aoTcJUw=
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		Ri2MyBnZzEM5OtUdJA4f19wMmqQ=
+		ReiIhVo2djV6mVCUbu/wh+atneI=
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		7xc/pyUiZQLtF0uQzqffQAmz7M8=
+		a/CLDWTbqE3tO5aE/2c9aoTcJUw=
 		</data>
 		<key>Modules/NetworkManager.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		Ri2MyBnZzEM5OtUdJA4f19wMmqQ=
+		ReiIhVo2djV6mVCUbu/wh+atneI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -89,110 +89,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7xc/pyUiZQLtF0uQzqffQAmz7M8=
+			a/CLDWTbqE3tO5aE/2c9aoTcJUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			MjXFJW/fcg1KFSgcdQhJRO2TstWwtI6X5CJSApXg4lU=
+			NpeCLrDkaNyA5TZxnD3Ppag4nB2r17EdyonWXT831Cw=
 			</data>
 		</dict>
 		<key>Modules/NetworkManager.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ri2MyBnZzEM5OtUdJA4f19wMmqQ=
+			ReiIhVo2djV6mVCUbu/wh+atneI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uz0zH3/7nyWzr4iXrlJC1GeaoeNrT4Cio8Y8hzIYOyE=
+			Mb/ESs7PQl7/8GnIlWFPxVqRWHK9iYIQXfeyjmSTZAY=
 			</data>
 		</dict>
 		<key>Modules/NetworkManager.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EtNBPlq8cUcXsZu0R0uw1J/obfU=
+			1ziBa4KQmKypTxpoElcgB3ymadA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HLfyQ0V0oylk8X01byTdxzFvy7/0q9X/zAByk50AjHM=
+			PHbkLpUZagGyaMh6FINy1oOYBrQHleSMjLIy/gQkmgk=
 			</data>
 		</dict>
 		<key>Modules/NetworkManager.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bG2cIQs057oxf9c0/ZxnS0X/OhY=
+			Sp3J9BKfEwyURbLT8B40ZtUDtbY=
 			</data>
 			<key>hash2</key>
 			<data>
-			X4TAcfWr1r61OEni/Jgr+0gk/8hRKIt4lvkgUtfP35U=
+			6QQ6AojMuCVlAbIVF1NnaoYfWDZXp1zTTBnvdVkRg/A=
 			</data>
 		</dict>
 		<key>Modules/NetworkManager.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EtNBPlq8cUcXsZu0R0uw1J/obfU=
+			1ziBa4KQmKypTxpoElcgB3ymadA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HLfyQ0V0oylk8X01byTdxzFvy7/0q9X/zAByk50AjHM=
+			PHbkLpUZagGyaMh6FINy1oOYBrQHleSMjLIy/gQkmgk=
 			</data>
 		</dict>
 		<key>Modules/NetworkManager.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bG2cIQs057oxf9c0/ZxnS0X/OhY=
+			Sp3J9BKfEwyURbLT8B40ZtUDtbY=
 			</data>
 			<key>hash2</key>
 			<data>
-			X4TAcfWr1r61OEni/Jgr+0gk/8hRKIt4lvkgUtfP35U=
+			6QQ6AojMuCVlAbIVF1NnaoYfWDZXp1zTTBnvdVkRg/A=
 			</data>
 		</dict>
 		<key>Modules/NetworkManager.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7xc/pyUiZQLtF0uQzqffQAmz7M8=
+			a/CLDWTbqE3tO5aE/2c9aoTcJUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			MjXFJW/fcg1KFSgcdQhJRO2TstWwtI6X5CJSApXg4lU=
+			NpeCLrDkaNyA5TZxnD3Ppag4nB2r17EdyonWXT831Cw=
 			</data>
 		</dict>
 		<key>Modules/NetworkManager.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ri2MyBnZzEM5OtUdJA4f19wMmqQ=
+			ReiIhVo2djV6mVCUbu/wh+atneI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uz0zH3/7nyWzr4iXrlJC1GeaoeNrT4Cio8Y8hzIYOyE=
+			Mb/ESs7PQl7/8GnIlWFPxVqRWHK9iYIQXfeyjmSTZAY=
 			</data>
 		</dict>
 		<key>Modules/NetworkManager.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7xc/pyUiZQLtF0uQzqffQAmz7M8=
+			a/CLDWTbqE3tO5aE/2c9aoTcJUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			MjXFJW/fcg1KFSgcdQhJRO2TstWwtI6X5CJSApXg4lU=
+			NpeCLrDkaNyA5TZxnD3Ppag4nB2r17EdyonWXT831Cw=
 			</data>
 		</dict>
 		<key>Modules/NetworkManager.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ri2MyBnZzEM5OtUdJA4f19wMmqQ=
+			ReiIhVo2djV6mVCUbu/wh+atneI=
 			</data>
 			<key>hash2</key>
 			<data>
-			Uz0zH3/7nyWzr4iXrlJC1GeaoeNrT4Cio8Y8hzIYOyE=
+			Mb/ESs7PQl7/8GnIlWFPxVqRWHK9iYIQXfeyjmSTZAY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

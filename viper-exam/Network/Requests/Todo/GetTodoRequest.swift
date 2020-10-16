@@ -15,5 +15,6 @@ struct GetTodoRequest: RequestArrayDelegate {
     var method: HttpMethod = .get
     var path: String = RequestPath.todos.rawValue
     var parameters: Params?
+    var headers: [String : String] = [:]
 }
 

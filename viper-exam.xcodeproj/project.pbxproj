@@ -12,6 +12,8 @@
 		D90FF1E223E453ED0001409F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90FF1E123E453EC0001409F /* UIColorExtensions.swift */; };
 		D90FF1E423E454540001409F /* DarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90FF1E323E454540001409F /* DarkMode.swift */; };
 		D90FF1E623E458760001409F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D90FF1E523E458760001409F /* README.md */; };
+		D91086532539C6B6007275DE /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91086512539C6AF007275DE /* NetworkManager.framework */; };
+		D91086542539C6B6007275DE /* NetworkManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D91086512539C6AF007275DE /* NetworkManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D916F36B23D711D7003DF4F2 /* AlbumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36523D711D7003DF4F2 /* AlbumPresenter.swift */; };
 		D916F36C23D711D7003DF4F2 /* AlbumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36623D711D7003DF4F2 /* AlbumRouter.swift */; };
 		D916F36D23D711D7003DF4F2 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F36723D711D7003DF4F2 /* AlbumViewController.swift */; };
@@ -64,9 +66,6 @@
 		D98A9A7723D5EEEB008378CC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A7623D5EEEB008378CC /* LoadingView.swift */; };
 		D98A9A7923D5EF11008378CC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A7823D5EF11008378CC /* UIViewExtension.swift */; };
 		D98A9A7B23D5EF37008378CC /* LoadingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98A9A7A23D5EF37008378CC /* LoadingViewPresenter.swift */; };
-		D9996E3D23DB30200006B914 /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9996E3B23DB30020006B914 /* NetworkManager.framework */; };
-		D9996E3E23DB30200006B914 /* NetworkManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9996E3B23DB30020006B914 /* NetworkManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D9996E4023DB39F10006B914 /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9996E3B23DB30020006B914 /* NetworkManager.framework */; };
 		D9A7DBF623D86C3900AC1E35 /* GetUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7DBF523D86C3900AC1E35 /* GetUserRequest.swift */; };
 		D9A7DBFE23D86C5600AC1E35 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7DBF823D86C5600AC1E35 /* UserPresenter.swift */; };
 		D9A7DBFF23D86C5600AC1E35 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7DBF923D86C5600AC1E35 /* UserRouter.swift */; };
@@ -118,7 +117,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D9996E3E23DB30200006B914 /* NetworkManager.framework in Embed Frameworks */,
+				D91086542539C6B6007275DE /* NetworkManager.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +132,7 @@
 		D90FF1E123E453EC0001409F /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		D90FF1E323E454540001409F /* DarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkMode.swift; sourceTree = "<group>"; };
 		D90FF1E523E458760001409F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D91086512539C6AF007275DE /* NetworkManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = "<group>"; };
 		D916F36523D711D7003DF4F2 /* AlbumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPresenter.swift; sourceTree = "<group>"; };
 		D916F36623D711D7003DF4F2 /* AlbumRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRouter.swift; sourceTree = "<group>"; };
 		D916F36723D711D7003DF4F2 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
@@ -191,7 +191,6 @@
 		D98A9A7623D5EEEB008378CC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		D98A9A7823D5EF11008378CC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		D98A9A7A23D5EF37008378CC /* LoadingViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewPresenter.swift; sourceTree = "<group>"; };
-		D9996E3B23DB30020006B914 /* NetworkManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = "<group>"; };
 		D9A7DBF523D86C3900AC1E35 /* GetUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserRequest.swift; sourceTree = "<group>"; };
 		D9A7DBF823D86C5600AC1E35 /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		D9A7DBF923D86C5600AC1E35 /* UserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
@@ -225,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2497B067F7D994BB0E0AA3B1 /* Pods_viper_exam.framework in Frameworks */,
-				D9996E3D23DB30200006B914 /* NetworkManager.framework in Frameworks */,
+				D91086532539C6B6007275DE /* NetworkManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +239,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9996E4023DB39F10006B914 /* NetworkManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +322,7 @@
 		D939838523D1A7B800086080 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				D9996E3B23DB30020006B914 /* NetworkManager.framework */,
+				D91086512539C6AF007275DE /* NetworkManager.framework */,
 				D9996E3A23DB2FE70006B914 /* Config */,
 				D9546AEE23D48B9400947AB8 /* Requests */,
 			);
@@ -518,6 +516,7 @@
 		D98A9A7423D5EEC8008378CC /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				D9BB5B9923D495DE0078A7A1 /* AppButton.swift */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -595,7 +594,6 @@
 				D9A7DC0D23D8785100AC1E35 /* MKAnnotation */,
 				D98A9A7523D5EED7008378CC /* UIView */,
 				D98A9A7423D5EEC8008378CC /* UIButton */,
-				D9BB5B9923D495DE0078A7A1 /* AppButton.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -706,7 +704,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Mustafa GUNES";
 				TargetAttributes = {
 					D939836D23D1A31600086080 = {
@@ -964,6 +962,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1024,6 +1023,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1064,7 +1064,7 @@
 					"$(PROJECT_DIR)/viper-exam/Network",
 				);
 				INFOPLIST_FILE = "viper-exam/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1088,7 +1088,7 @@
 					"$(PROJECT_DIR)/viper-exam/Network",
 				);
 				INFOPLIST_FILE = "viper-exam/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

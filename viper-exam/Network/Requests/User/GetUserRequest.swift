@@ -15,4 +15,5 @@ struct GetUserRequest: RequestArrayDelegate {
     var method: HttpMethod = .get
     var path: String = RequestPath.users.rawValue
     var parameters: Params?
+    var headers: [String : String] = [:]
 }
